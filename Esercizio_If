@@ -1,0 +1,18 @@
+package leszion02_Statement;
+
+public class Esercizio_If {
+		public static void main(String[] args) {
+			
+			/**
+			 * Esami all universita
+			 * Dobbiamo valutare un esame all' università. Per poter sostenere l'orale devo aver
+			 * Totalizzato almeno 18 all' esame scritto. Uno volta inseriti entrambi i voti calcola
+			 * la media per il voto finale
+			 */
+			
+			
+			
+			
+			
+		}
+}
