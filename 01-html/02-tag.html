@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End - HTML - 02 Tag</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <p>
+            <!-- Il tag STRONG rende porzioni di testo in grassetto a comunica al browser che si tratta di una parte importante del contenuto -->
+            Hello <strong>World</strong>!
+        </p>
+
+        <p>
+            <!-- Il tag EM enfatizza di tesso rendendola graficamente in corsiva -->
+            La mia prima <em>pagina web</em>
+        </p>
+
+        <!-- 
+        Abbiamo a disposizione 6 tag per i titoli all'interno del testo. Si chiamano headings e i tag sono: h1, h2, h3, h4, h5, h6.
+
+            Hanno un valore semantico decrescente, quindi il tag H1 di una pagina conterrà il suo titolo principale e ce ne potrà essere solo uno.
+
+            I contenuti saranno divisi all'interno della pagina e ogni porzione avrà il suo titolo che spiegherà di cosa parla. Questo titolo sarà contenuto in un H2.
+
+            Se all'interno delle macro-porzioni di contenuto ci sarà bisogno di suddividere ancora, allora potremo utilizzare gli H3 per indicare le sotto-porzioni.
+
+            E così via, anche se H4, H5 e H6 non sono quasi mai utilizzati.
+
+            È importantissimo utilizzare gli heading secondo il loro valore semantico e NON il loro aspetto sulla pagina, per quello ci sarà il CSS a occuparsene.
+    -->
+        <h1 style="font-size: 40px;">Titolo principale</h1>
+
+        <h2>Sotto-argomento 1</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil explicabo ducimus provident
+            necessitatibus in debitis maxime porro expedita eveniet ullam amet rerum, hic alias fugit eius id autem
+            optio!
+        </p>
+
+        <h2>Sotto argomento1.2 </h2>
+
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eaque ullam autem repellat itaque voluptatum
+            velit vitae quis iure ducimus veniam ad totam blanditiis illo laboriosam voluptatem repellendus, dolore
+            enim.
+            Voluptatem, mollitia quos totam quod reprehenderit blanditiis dignissimos id recusandae quasi, architecto
+            dolor, illo dolore omnis cum quam eligendi nisi tenetur voluptatibus porro? Pariatur veritatis assumenda
+            error quaerat doloribus reprehenderit?
+            Et, sed? Eveniet, quidem itaque ut mollitia voluptate, dignissimos alias rem ducimus exercitationem sit
+            excepturi. Dolores, atque neque in dignissimos, repellendus dolor explicabo vitae alias adipisci, quia
+            nesciunt quidem eligendi?
+        </p>
+
+
+        <!-- Il tag HR, Horizontal Rule, e' un tag autoconclusivo che crea una riga divisoria -->
+        <hr>
+
+
+        <!--   
+         Liste ordinate e non ordinate.
+            È possibile creare delle liste puntate o numerate utilizzando i tag corretti.
+
+            Questi sono UL e OL, rispettivamente Unordered List e Ordered List. Comunicano al lbrowser che ciò che che contengono è una lista. Ogni elemento della lista invece viene contenuto all'interno di un tag LI, List Item, e gli LI sono gli unici tag accettati come figli diretti di UL e OL.
+    
+    -->
+        <ul>
+            <li>Mario</li>
+            <li>Luigi</li>
+            <li>Yoshi</li>
+        </ul>
+
+        <ol>
+            <li>Bowser</li>
+            <li>Toad</li>
+            <li>Peach</li>
+        </ol>
+
+        <hr>
+
+        <!-- 
+            Il tag DIV è probabilmente il tag più usato quando si crea una pagina web.
+            Si tratta di un contenitore generico che divide il contenuto in porzioni o viene usato per raggruppare elementi che ha senso accostare tra loro.
+            Si usa molto per creare layout in combinazione con il CSS.
+            Non hanno un effetto visivo.
+    -->
+        <div>
+            Sono un tag DIV
+        </div>
+
+        <!-- 
+       l tag SPAN è simile a un DIV, ma non si comporta nella stessa maniera.
+            È sempre un tag generico e viene spesso utilizzato per assegnare regole CSS a una porzione di testo o ad altri elementi.
+
+    -->
+        <span>Sono un tag SPAN</span>
+
+        <hr>
+
+        <!-- 
+         Il tag IMG è un tag autoconclusivo che permette di visualizzare un'immagine all'interno di una pagina.
+
+            Per dire al browser quale immagine debba essere renderizzata, dobbiamo usare un ATTRIBUTO.
+
+            Gli attributi sono un qualcosa che si aggiunge all'interno del tag di apertura, nelle parentesi angolari, per fornire al browser informazioni aggiuntive sull'elemento.
+
+            Assegnando al tag IMG un attributo src (source) possiamo dire al browser dove andare a trovare l'immagine da renderizzare sulla pagina. Assegnando all'attributo src il percorso dell'immagine da utilizzare, il browser saprà che deve renderizzare un'immagine che si trova esattamente dove specificato nell'src.
+
+            È bene anche utilizzare l'attributo alt (ALTernative text) che fornisce una descrizione testuale dell'immagine. Questo serve in caso l'immagine non possa essere renderizzata e, ancor più importante, a essere riconosciuta da lettori di pagine web per ipovedenti.
+
+    -->
+        <img src="img/images.jfif" alt="Gattino carino" width="400">
+
+        <hr>
+
+        <!-- 
+    
+    
+    
+    
+    -->
+        <a href="https://www.google.com" title="Link al sito di Google" target="_blank">Google</a>
+        <br>
+        <a href="01 -  intro.html" title="Vai alla prima pagina del corso">Torno all'inizio</a>
+
+        <!-- 
+        Intestazione delle pagina o di una sezione in cima alla pagina
+        -->
+
+        <header></header>
+
+        <!-- Menu di navigation -->
+        <nav></nav>
+
+        <!-- Contenuto principale della pagina -->
+         <main></main>
+
+        <!-- Contenuti secondari o correlati (pubblicita, box laterali, ecc) -->
+        <aside></aside>
+
+        <!-- Contunuto autonomo e riutilizzabile (articolo di blog, schedo prodotto, card, ecc.) -->
+        <article></article>
+
+        <!-- Raggiuppamento tematico dei contenuti -->
+         <section></section>
+
+         <!-- Chiusura della pagina -->
+          <footer></footer>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
