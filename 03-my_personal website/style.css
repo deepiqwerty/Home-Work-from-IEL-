@@ -1,0 +1,64 @@
+h1 {
+    color: green;
+    background-color: white;
+    font-size: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: green;
+}
+
+.introduction {
+    color: green;
+    background-color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid green;
+}
+
+
+p {
+    color: green;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    column-count: 0;
+    column-gap: 0px;
+    text-align: center;
+}
+
+ul {
+
+    border-bottom: 2px solid green;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-top: 2px solid green;
+
+}
+
+ul {
+    color: black;
+    columns: 5;
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    font-size: medium;
+    color: green;
+    text-align: center;
+
+}
+
+
+div {
+    margin: 0px;
+    padding: 40px;
+    border: 0px solid green;
+}
