@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> // It helps your browser display letters, numbers and special characters correctly.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front End - HTML - 02 Tag</title>
+    <title>Front End - HTML - 02 Tags</title>
 </head>
 
 <body>
@@ -12,31 +13,32 @@
     <div class="wrapper">
 
         <p>
-            <!-- Il tag STRONG rende porzioni di testo in grassetto a comunica al browser che si tratta di una parte importante del contenuto -->
+            <!-- The STRONG tag makes portions of text bold and communicates to the browser that this is an important part of the content -->
             Hello <strong>World</strong>!
         </p>
 
         <p>
-            <!-- Il tag EM enfatizza di tesso rendendola graficamente in corsiva -->
-            La mia prima <em>pagina web</em>
+            <!-- The EM tag emphasizes text by displaying it in italics -->
+            My first <em>web page</em>
         </p>
 
-        <!-- 
-        Abbiamo a disposizione 6 tag per i titoli all'interno del testo. Si chiamano headings e i tag sono: h1, h2, h3, h4, h5, h6.
+        <!--
+        We have 6 tags available for headings within the text. They are called headings and the tags are: h1, h2, h3, h4, h5, h6.
 
-            Hanno un valore semantico decrescente, quindi il tag H1 di una pagina conterrà il suo titolo principale e ce ne potrà essere solo uno.
+            They have decreasing semantic importance, so the H1 tag of a page will contain its main title, and there should only be one.
 
-            I contenuti saranno divisi all'interno della pagina e ogni porzione avrà il suo titolo che spiegherà di cosa parla. Questo titolo sarà contenuto in un H2.
+            The content will be divided into sections within the page, and each section will have a title explaining what it is about. This title will be contained in an H2.
 
-            Se all'interno delle macro-porzioni di contenuto ci sarà bisogno di suddividere ancora, allora potremo utilizzare gli H3 per indicare le sotto-porzioni.
+            If we need to divide the main sections of content even further, we can use H3 tags to identify subsections.
 
-            E così via, anche se H4, H5 e H6 non sono quasi mai utilizzati.
+            And so on, although H4, H5 and H6 are rarely used.
 
-            È importantissimo utilizzare gli heading secondo il loro valore semantico e NON il loro aspetto sulla pagina, per quello ci sarà il CSS a occuparsene.
-    -->
-        <h1 style="font-size: 40px;">Titolo principale</h1>
+            It is very important to use headings according to their semantic importance and NOT their appearance on the page. CSS will take care of the appearance.
+        -->
 
-        <h2>Sotto-argomento 1</h2>
+        <h1 style="font-size: 40px;">Main Title</h1>
+
+        <h2>Subtopic 1</h2>
 
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil explicabo ducimus provident
@@ -44,10 +46,9 @@
             optio!
         </p>
 
-        <h2>Sotto argomento1.2 </h2>
+        <h2>Subtopic 1.2</h2>
 
         <p>
-
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eaque ullam autem repellat itaque voluptatum
             velit vitae quis iure ducimus veniam ad totam blanditiis illo laboriosam voluptatem repellendus, dolore
             enim.
@@ -59,18 +60,20 @@
             nesciunt quidem eligendi?
         </p>
 
+        <!-- The HR tag (Horizontal Rule) is a self-closing tag that creates a dividing line -->
 
-        <!-- Il tag HR, Horizontal Rule, e' un tag autoconclusivo che crea una riga divisoria -->
         <hr>
 
+        <!--
+            Ordered and unordered lists.
 
-        <!--   
-         Liste ordinate e non ordinate.
-            È possibile creare delle liste puntate o numerate utilizzando i tag corretti.
+            It is possible to create bulleted or numbered lists using the correct tags.
 
-            Questi sono UL e OL, rispettivamente Unordered List e Ordered List. Comunicano al lbrowser che ciò che che contengono è una lista. Ogni elemento della lista invece viene contenuto all'interno di un tag LI, List Item, e gli LI sono gli unici tag accettati come figli diretti di UL e OL.
-    
-    -->
+            These are UL and OL, respectively Unordered List and Ordered List. They communicate to the browser that their content is a list.
+
+            Each item in the list is contained inside an LI tag (List Item), and LI elements are the only tags accepted as direct children of UL and OL.
+        -->
+
         <ul>
             <li>Mario</li>
             <li>Luigi</li>
@@ -85,81 +88,83 @@
 
         <hr>
 
-        <!-- 
-            Il tag DIV è probabilmente il tag più usato quando si crea una pagina web.
-            Si tratta di un contenitore generico che divide il contenuto in porzioni o viene usato per raggruppare elementi che ha senso accostare tra loro.
-            Si usa molto per creare layout in combinazione con il CSS.
-            Non hanno un effetto visivo.
-    -->
+        <!--
+            The DIV tag is probably the most commonly used tag when creating a web page.
+
+            It is a generic container that divides content into sections or is used to group elements that make sense together.
+
+            It is often used to create layouts in combination with CSS.
+
+            It does not have any visual effect by itself.
+        -->
+
         <div>
-            Sono un tag DIV
+            I am a DIV tag
         </div>
 
-        <!-- 
-       l tag SPAN è simile a un DIV, ma non si comporta nella stessa maniera.
-            È sempre un tag generico e viene spesso utilizzato per assegnare regole CSS a una porzione di testo o ad altri elementi.
+        <!--
+            The SPAN tag is similar to a DIV, but it does not behave in the same way.
 
-    -->
-        <span>Sono un tag SPAN</span>
+            It is also a generic tag and is often used to apply CSS rules to a portion of text or other elements.
+        -->
 
-        <hr>
-
-        <!-- 
-         Il tag IMG è un tag autoconclusivo che permette di visualizzare un'immagine all'interno di una pagina.
-
-            Per dire al browser quale immagine debba essere renderizzata, dobbiamo usare un ATTRIBUTO.
-
-            Gli attributi sono un qualcosa che si aggiunge all'interno del tag di apertura, nelle parentesi angolari, per fornire al browser informazioni aggiuntive sull'elemento.
-
-            Assegnando al tag IMG un attributo src (source) possiamo dire al browser dove andare a trovare l'immagine da renderizzare sulla pagina. Assegnando all'attributo src il percorso dell'immagine da utilizzare, il browser saprà che deve renderizzare un'immagine che si trova esattamente dove specificato nell'src.
-
-            È bene anche utilizzare l'attributo alt (ALTernative text) che fornisce una descrizione testuale dell'immagine. Questo serve in caso l'immagine non possa essere renderizzata e, ancor più importante, a essere riconosciuta da lettori di pagine web per ipovedenti.
-
-    -->
-        <img src="img/images.jfif" alt="Gattino carino" width="400">
+        <span>I am a SPAN tag</span>
 
         <hr>
 
-        <!-- 
-    
-    
-    
-    
-    -->
-        <a href="https://www.google.com" title="Link al sito di Google" target="_blank">Google</a>
+        <!--
+            The IMG tag is a self-closing tag that allows us to display an image on a web page.
+
+            To tell the browser which image should be displayed, we need to use an ATTRIBUTE.
+
+            Attributes are additional information added inside the opening tag, within the angle brackets, to provide the browser with extra information about an element.
+
+            By assigning an SRC (source) attribute to the IMG tag, we can tell the browser where to find the image to display on the page.
+
+            By assigning the path of the image to the SRC attribute, the browser knows exactly where to find the image it needs to render.
+
+            It is also good practice to use the ALT attribute (Alternative Text), which provides a text description of the image.
+
+            This is useful if the image cannot be displayed and, more importantly, allows screen readers for visually impaired users to understand the image.
+        -->
+
+        <img src="img/images.jfif" alt="Cute kitten" width="400">
+
+        <hr>
+
+        <!-- The A tag creates a hyperlink -->
+
+        <a href="https://www.google.com" title="Link to Google's website" target="_blank">Google</a>
         <br>
-        <a href="01 -  intro.html" title="Vai alla prima pagina del corso">Torno all'inizio</a>
+        <a href="01-intro.html" title="Go to the first page of the course">Back to the beginning</a>
 
-        <!-- 
-        Intestazione delle pagina o di una sezione in cima alla pagina
+        <!--
+            The HEADER contains the heading of a page or section, usually at the top.
         -->
 
         <header></header>
 
-        <!-- Menu di navigation -->
+        <!-- Navigation menu -->
         <nav></nav>
 
-        <!-- Contenuto principale della pagina -->
-         <main></main>
+        <!-- Main content of the page -->
+        <main></main>
 
-        <!-- Contenuti secondari o correlati (pubblicita, box laterali, ecc) -->
+        <!-- Secondary or related content (advertisements, sidebars, etc.) -->
         <aside></aside>
 
-        <!-- Contunuto autonomo e riutilizzabile (articolo di blog, schedo prodotto, card, ecc.) -->
+        <!-- Independent and reusable content (blog article, product card, etc.) -->
         <article></article>
 
-        <!-- Raggiuppamento tematico dei contenuti -->
-         <section></section>
+        <!-- A thematic grouping of content -->
+        <section></section>
 
-         <!-- Chiusura della pagina -->
-          <footer></footer>
+        <!-- The bottom section of the page -->
+        <footer></footer>
 
     </div>
-
-
-
-
 
 </body>
 
 </html>
+
