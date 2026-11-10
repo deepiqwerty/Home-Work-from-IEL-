@@ -1,11 +1,13 @@
+
+
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front End - CSS - 01 Basi</title>
+    <title>Front End - CSS - 01 Basics</title>
 
-    <!-- Aggiungo del CSS utilizzando il tag STYLE direttamente nell'HTML -->
+    <!-- I add CSS using the STYLE tag directly inside the HTML -->
     <!-- <style>
         h1 {
             color: orange;
@@ -21,10 +23,11 @@
 <body>
 
     <!--
-        Se l'HTML serve a creare la struttura di una pagina web, il CSS si occupa di renderla presentabile.
-        Per farlo utilizziamo un foglio di stile (style sheet), ovvero un documento che contiene una lista di regole CSS che assegnano uno stile ai nostri elementi HTML.
+        If HTML is used to create the structure of a web page, CSS is responsible for making it presentable.
 
-        Un set di regole CSS ha questo aspetto:
+        To do this, we use a style sheet, which is a document containing a list of CSS rules that assign styles to our HTML elements.
+
+        A set of CSS rules looks like this:
 
         div {
             color: red;
@@ -35,24 +38,33 @@
             font-weight: bold;
         }
 
-        Ogni set è composto da:
-            - Selettore -> permette di definire quali elementi devono essere stilizzati.
-            - Parentesi graffe -> contengono tutte le regole di stile che gli elementi selezionati devono avere.
-            - Dichiarazione -> è una coppia chiave/valore che definisce come debba essere stilizzato l'elemento selezionato. Composta da:
-                - Proprietà: rappresenta l'aspetto che si desidera modificare
-                - Valore: indica come deve essere modificata la proprietà. I valori possono essere colori, dimensioni, unità di misura, ecc.
-            UNA DICHIARAZIONE TERMINA SEMPRE CON IL PUNTO E VIRGOLA!
+        Each set consists of:
 
-        Ci sono 3 modi per aggiungere dello stile al nostro documento HTML:
-            - Con un tag STYLE direttamente nell'HTML (sconsigliato)
-            - Direttamente sull'elemento interessato con l'attributo style (sconsigliato)
-            - Con un foglio di stile separato
+            - Selector -> allows us to define which elements should be styled.
+
+            - Curly braces -> contain all the style rules that the selected elements should have.
+
+            - Declaration -> is a key/value pair that defines how the selected element should be styled. It consists of:
+
+                - Property: represents the aspect we want to modify.
+
+                - Value: indicates how the property should be modified. Values can be colours, dimensions, measurement units, etc.
+
+            A DECLARATION ALWAYS ENDS WITH A SEMICOLON!
+
+        There are 3 ways to add styling to our HTML document:
+
+            - Using a STYLE tag directly inside the HTML (not recommended).
+
+            - Directly on the element concerned using the style attribute (not recommended).
+
+            - Using a separate style sheet.
     -->
 
     <section class="wrapper">
 
-        <!-- <h1 style="color: orange; text-decoration: underline;">Basi CSS</h1> -->
-        <h1>Basi CSS</h1>
+        <!-- <h1 style="color: orange; text-decoration: underline;">CSS Basics</h1> -->
+        <h1>CSS Basics</h1>
 
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perspiciatis fugiat architecto nam consequatur. Recusandae quaerat ipsam dolore, facere tempora, nihil quas eaque animi voluptate quibusdam ipsum voluptates, maiores itaque.
@@ -72,7 +84,7 @@
             </ul>
         </div>
 
-        <h2>Elementi inline</h2>
+        <h2>Inline Elements</h2>
 
         <span>span tag</span>
         <strong>strong tag</strong>
@@ -80,18 +92,19 @@
         <a href="#!" title="">anchor tag</a>
         <span>span tag</span>
 
-        <h2>Elementi block</h2>
+        <h2>Block Elements</h2>
 
         <div>div tag</div>
-        <div>altro div tag</div>
+        <div>another div tag</div>
         <h3>h3 tag</h3>
         <p>paragraph tag</p>
         <ul>
             <li>li tag</li>
             <li>li tag</li>
         </ul>
-        
+
     </section>
-    
+
 </body>
 </html>
+    
