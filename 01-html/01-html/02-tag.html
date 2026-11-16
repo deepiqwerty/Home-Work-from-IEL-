@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> // It helps your browser display letters, numbers and special characters correctly.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End - HTML - 02 Tags</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <p>
+            <!-- The STRONG tag makes portions of text bold and communicates to the browser that this is an important part of the content -->
+            Hello <strong>World</strong>!
+        </p>
+
+        <p>
+            <!-- The EM tag emphasizes text by displaying it in italics -->
+            My first <em>web page</em>
+        </p>
+
+        <!--
+        We have 6 tags available for headings within the text. They are called headings and the tags are: h1, h2, h3, h4, h5, h6.
+
+            They have decreasing semantic importance, so the H1 tag of a page will contain its main title, and there should only be one.
+
+            The content will be divided into sections within the page, and each section will have a title explaining what it is about. This title will be contained in an H2.
+
+            If we need to divide the main sections of content even further, we can use H3 tags to identify subsections.
+
+            And so on, although H4, H5 and H6 are rarely used.
+
+            It is very important to use headings according to their semantic importance and NOT their appearance on the page. CSS will take care of the appearance.
+        -->
+
+        <h1 style="font-size: 40px;">Main Title</h1>
+
+        <h2>Subtopic 1</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil explicabo ducimus provident
+            necessitatibus in debitis maxime porro expedita eveniet ullam amet rerum, hic alias fugit eius id autem
+            optio!
+        </p>
+
+        <h2>Subtopic 1.2</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eaque ullam autem repellat itaque voluptatum
+            velit vitae quis iure ducimus veniam ad totam blanditiis illo laboriosam voluptatem repellendus, dolore
+            enim.
+            Voluptatem, mollitia quos totam quod reprehenderit blanditiis dignissimos id recusandae quasi, architecto
+            dolor, illo dolore omnis cum quam eligendi nisi tenetur voluptatibus porro? Pariatur veritatis assumenda
+            error quaerat doloribus reprehenderit?
+            Et, sed? Eveniet, quidem itaque ut mollitia voluptate, dignissimos alias rem ducimus exercitationem sit
+            excepturi. Dolores, atque neque in dignissimos, repellendus dolor explicabo vitae alias adipisci, quia
+            nesciunt quidem eligendi?
+        </p>
+
+        <!-- The HR tag (Horizontal Rule) is a self-closing tag that creates a dividing line -->
+
+        <hr>
+
+        <!--
+            Ordered and unordered lists.
+
+            It is possible to create bulleted or numbered lists using the correct tags.
+
+            These are UL and OL, respectively Unordered List and Ordered List. They communicate to the browser that their content is a list.
+
+            Each item in the list is contained inside an LI tag (List Item), and LI elements are the only tags accepted as direct children of UL and OL.
+        -->
+
+        <ul>
+            <li>Mario</li>
+            <li>Luigi</li>
+            <li>Yoshi</li>
+        </ul>
+
+        <ol>
+            <li>Bowser</li>
+            <li>Toad</li>
+            <li>Peach</li>
+        </ol>
+
+        <hr>
+
+        <!--
+            The DIV tag is probably the most commonly used tag when creating a web page.
+
+            It is a generic container that divides content into sections or is used to group elements that make sense together.
+
+            It is often used to create layouts in combination with CSS.
+
+            It does not have any visual effect by itself.
+        -->
+
+        <div>
+            I am a DIV tag
+        </div>
+
+        <!--
+            The SPAN tag is similar to a DIV, but it does not behave in the same way.
+
+            It is also a generic tag and is often used to apply CSS rules to a portion of text or other elements.
+        -->
+
+        <span>I am a SPAN tag</span>
+
+        <hr>
+
+        <!--
+            The IMG tag is a self-closing tag that allows us to display an image on a web page.
+
+            To tell the browser which image should be displayed, we need to use an ATTRIBUTE.
+
+            Attributes are additional information added inside the opening tag, within the angle brackets, to provide the browser with extra information about an element.
+
+            By assigning an SRC (source) attribute to the IMG tag, we can tell the browser where to find the image to display on the page.
+
+            By assigning the path of the image to the SRC attribute, the browser knows exactly where to find the image it needs to render.
+
+            It is also good practice to use the ALT attribute (Alternative Text), which provides a text description of the image.
+
+            This is useful if the image cannot be displayed and, more importantly, allows screen readers for visually impaired users to understand the image.
+        -->
+
+        <img src="img/images.jfif" alt="Cute kitten" width="400">
+
+        <hr>
+
+        <!-- The A tag creates a hyperlink -->
+
+        <a href="https://www.google.com" title="Link to Google's website" target="_blank">Google</a>
+        <br>
+        <a href="01-intro.html" title="Go to the first page of the course">Back to the beginning</a>
+
+        <!--
+            The HEADER contains the heading of a page or section, usually at the top.
+        -->
+
+        <header></header>
+
+        <!-- Navigation menu -->
+        <nav></nav>
+
+        <!-- Main content of the page -->
+        <main></main>
+
+        <!-- Secondary or related content (advertisements, sidebars, etc.) -->
+        <aside></aside>
+
+        <!-- Independent and reusable content (blog article, product card, etc.) -->
+        <article></article>
+
+        <!-- A thematic grouping of content -->
+        <section></section>
+
+        <!-- The bottom section of the page -->
+        <footer></footer>
+
+    </div>
+
+</body>
+
+</html>
