@@ -1,0 +1,92 @@
+/* ------------------------------- 1. HEADER -------------------------------- */
+/* Selettori utili: .header-inner, .logo, .nav-links */
+.header-inner {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+/* -------------------------------- 2. HERO --------------------------------- */
+/* Selettori utili: .hero-inner, .hero-actions */
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+
+}
+
+/* ------------------------------ 3. VANTAGGI ------------------------------- */
+/* Selettori utili: .features-list, .feature, .feature-icon */
+
+
+.features-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.feature{
+    display:flex;
+    gap: 1rem;
+}
+
+.feature-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+/* ------------------------------- 4. FILTRI -------------------------------- */
+/* Selettori utili: .filters */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* -------------------------------- 5. CARD --------------------------------- */
+/* Selettori utili: .cards, .card, .badge, .card-header, .card-text */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card {
+    flex: 1 1 300px;
+}
+
+
+/* ------------------------------ 6. CHI SIAMO ------------------------------ */
+/* Selettori utili: .about-inner, .about-media, .about-text, .stats, .stat */
+
+
+
+/* ----------------------------- 7. NEWSLETTER ------------------------------ */
+/* Selettori utili: .newsletter-inner, .newsletter-text, .newsletter-form, .newsletter-row */
+
+
+
+/* ------------------------------- 8. FOOTER -------------------------------- */
+/* Selettori utili: .footer-cols, .footer-col, .footer-bottom, .social-links */

@@ -241,6 +241,13 @@ code {
     margin-bottom: 2rem;
 }
 
+/* Layout responsive per le card: su schermi stretti diventano una colonna */
+@media (max-width: 800px) {
+    .cards-flex-row {
+        flex-direction: column;
+    }
+}
+
 /* Singola card (flex item) */
 .card {
     background: #f9fafb;
@@ -361,12 +368,12 @@ code {
     background: #ec4899;
 }
 
-/* Comments */
-.flex-self-order-demo{
+/* ------------------------ DEMO: ALIGN-SELF E ORDER ------------------------ */
+.flex-self-order-demo {
     margin-top: 1.5rem;
 }
 
-.flex-self-order{
+.flex-self-order {
     display: flex;
     align-items: center;
     gap: .6rem;
@@ -377,31 +384,40 @@ code {
     min-height: 90px;
 }
 
-.pill{
+.pill {
     background: #0ea5e9;
     color: #f0f9ff;
     border-radius: 999px;
-    padding: .3rem 1 rem;
+    padding: .3rem 1rem;
     font-size: .9rem;
 }
 
 /* Elemento con align-self */
 .pill-special {
-    /* comments */
-
+    /*
+        Align-self sovrascrive l'allineamento del singolo elemento rispetto al align-items del contenitore flex.
+        In questo caso il contenitore allinea al centro, ma questo elemento viene allineato in alto (flex-start).
+    */
     align-self: flex-start;
     background: #6366f1;
 }
 
-/* Comments */
-.pill-reordered{
-    /* comments */
+/* Elemento che viene visualizzato per primo grazie a order */
+.pill-reordered {
+    /*
+        Gli elementi flex hanno di default order: 0.
+
+        Un valore più piccolo viene visivamente "prima", un valore più grande "dopo".
+
+        ATTENZIONE:
+        Cambia solo l'ordine visivo, non l'ordine nel DOM (importante per accessibilità e screen reader)
+    */
     order: -1;
     background: #f97316;
-
 }
 
-.btn{
+/* BOTTONI RIUTILIZZABILI */
+.btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -410,42 +426,36 @@ code {
     border-radius: 999px;
     font-size: .9rem;
     border: 1px solid transparent;
+
+    transition: background .3s ease-in-out;
 }
 
-
-
-
-.btn-primary{
-    color: #eef2ff;
-    background-color: #4f46e5;
-    border-radius: rgba(78, 70, 229, 0.9);
-
-    transition: background .3s ease-in-out ;
-    
-}
-
-.btn:hover{
+.btn:hover {
     cursor: pointer;
 }
 
-
-.btn-primary:hover {
-    background: #3539a5;
-
+.btn-primary {
+    color: #eef2ff;
+    background: #4f46e5;
+    border-color: rgba(78, 70, 229, 0.9);
 }
 
-.btn-light{
+.btn-primary:hover  {
+    background: #3539a5;
+}
+
+.btn-light {
     color: #e0e7ff;
     background: rgba(224, 231, 255, 0.6);
     border-color: rgba(224, 231, 255, 0.6);
 }
 
-.btn-light:hover{
+.btn-light:hover {
     border-color: rgba(224, 231, 255, 1);
 }
 
-/*  */
-.navbar{
+/* ----------------------------- ESEMPIO NAVBAR ----------------------------- */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -453,17 +463,19 @@ code {
     color: #e5e7eb;
     background: #111827;
     margin-top: 1.6rem;
-    padding: .7rem;
+    padding: .7rem 1rem;
     border-radius: 999px;
 }
 
-.navbar-logo{
-    font-weight: 0.0rem;
+/* Logo */
+.navbar-logo {
+    font-weight: 700;
     letter-spacing: 0.08rem;
     font-size: .95rem;
 }
 
-.navbar-links{
+/* Links */
+.navbar-links {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -473,38 +485,59 @@ code {
 }
 
 .navbar-links a {
-    color:inherit;
+    color: inherit;
     text-decoration: none;
     font-size: .9rem;
     opacity: .9;
-    transform: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-.navbar-links a:hover{
+.navbar-links a:hover {
     opacity: 1;
 }
 
-.navbar-actions{
+.navbar-actions {
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 
-@media screen and (max-width: 768px){
-    .navbar-links{
+.btn-menu,
+.btn-close {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-links {
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
 
-        width: 100;
+        width: 100%;
         height: 100vh;
         background-color: #4338ca;
 
         transition: all .2s ease;
-        
+    }
+
+    .navbar-links.open {
+        right: 0;
+    }
+
+    .btn-menu {
+        display: inline-flex;
+        background: transparent;
+        color: inherit;
+    }
+
+    .btn-close {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
     }
 }

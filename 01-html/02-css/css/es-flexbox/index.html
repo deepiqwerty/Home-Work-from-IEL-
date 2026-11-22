@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micio Caffè - Esercitazione Flexbox</title>
+
+    <!-- base.css: colori, font, bordi e dimensioni. NON va modificato -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- layout.css: qui scrivete voi il layout con Flexbox -->
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+    <!-- ------------------------------ 1. HEADER ------------------------------ -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="#!" class="logo">
+                <svg class="lucide lucide-paw-print" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg> Micio Caffè
+            </a>
+
+            <nav aria-label="Navigazione principale">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#menu">Menù</a>
+                    </li>
+                    <li>
+                        <a href="#chi-siamo">Chi siamo</a>
+                    </li>
+                    <li>
+                        <a href="#newsletter">Newsletter</a>
+                    </li>
+                    <li>
+                        <a href="#contatti">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#!" class="btn btn-primary">Prenota un tavolo</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ------------------------------ 2. HERO ------------------------------ -->
+        <section class="hero">
+            <div class="container hero-inner">
+
+                <span class="eyebrow">Cat café a Torino</span>
+                <h1>Un caffè in compagnia dei nostri gatti</h1>
+
+                <p class="lead">
+                    Da noi vivono sei gatti del gattile in attesa di adozione. Passa per una colazione, per studiare o anche solo per conoscerli.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">Guarda il menù</a>
+                    <a href="#chi-siamo" class="btn btn-outline">Conosci i gatti</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------------------------------ 3. VANTAGGI ------------------------------ -->
+        <section class="section">
+            <div class="container">
+
+                <h2>Cosa trovi da noi</h2>
+
+                <ul class="features-list">
+                    <li class="feature">
+                        <span class="feature-icon">
+                            <svg class="lucide lucide-coffee" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
+                        </span>
+
+                        <div>
+                            <h3>Caffè tostato a Torino</h3>
+
+                            <p>
+                                Lo prendiamo da una piccola torrefazione del quartiere. Per il caffè filtro cambiamo origine ogni mese.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <span class="feature-icon">
+                            <svg class="lucide lucide-cat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
+                        </span>
+
+                        <div>
+                            <h3>Gatti da adottare</h3>
+
+                            <p>
+                                Arrivano tutti dal gattile e si possono adottare. Se uno ti ha conquistato, chiedi al banco come funziona.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <span class="feature-icon">
+                            <svg class="lucide lucide-wifi" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></svg>
+                        </span>
+
+                        <div>
+                            <h3>Wi-Fi e prese a ogni tavolo</h3>
+
+                            <p>
+                                Puoi fermarti a studiare o a lavorare quanto vuoi. La password del Wi-Fi è sullo scontrino.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- ------------------------------ 4-5. MENÙ ------------------------------ -->
+        <section class="section menu" id="menu">
+            <div class="container">
+
+                <span class="eyebrow">Dalle 8 alle 19</span>
+                <h2>Il menù</h2>
+
+                <p class="section-intro">
+                    Colazioni e merende. Brioche e torte le prepariamo noi ogni mattina.
+                </p>
+
+                <!-- 4. Filtri -->
+                <ul class="filters">
+                    <li>
+                        <button class="filter active">Tutto</button>
+                    </li>
+                    <li>
+                        <button class="filter">Caffetteria</button>
+                    </li>
+                    <li>
+                        <button class="filter">Colazione</button>
+                    </li>
+                    <li>
+                        <button class="filter">Dolci</button>
+                    </li>
+                    <li>
+                        <button class="filter">Vegano</button>
+                    </li>
+                    <li>
+                        <button class="filter">Senza glutine</button>
+                    </li>
+                </ul>
+
+                <!-- 5. Card -->
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-header">
+                            <h3>Espresso</h3>
+                            <span class="price">€ 1,30</span>
+                        </div>
+
+                        <p class="card-text">
+                            Miscela 100% arabica. Disponibile anche decaffeinato.
+                        </p>
+
+                        <a href="#!" class="btn btn-outline btn-small">Aggiungi all'ordine</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-header">
+                            <h3>Cappuccino</h3>
+                            <span class="price">€ 1,80</span>
+                        </div>
+
+                        <p class="card-text">
+                            Con latte intero o vegetale: avena, soia o mandorla.
+                        </p>
+
+                        <a href="#!" class="btn btn-outline btn-small">Aggiungi all'ordine</a>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge">Tipico torinese</span>
+
+                        <div class="card-header">
+                            <h3>Bicerin</h3>
+                            <span class="price">€ 4,50</span>
+                        </div>
+
+                        <p class="card-text">
+                            Caffè, cioccolato fondente e crema di latte, a strati nel bicchiere di vetro. Si beve senza mescolare.
+                        </p>
+
+                        <a href="#!" class="btn btn-outline btn-small">Aggiungi all'ordine</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-header">
+                            <h3>Brioche alla crema</h3>
+                            <span class="price">€ 1,60</span>
+                        </div>
+
+                        <p class="card-text">
+                            Fatta da noi.
+                        </p>
+
+                        <a href="#!" class="btn btn-outline btn-small">Aggiungi all'ordine</a>
+                    </article>
+
+                    <article class="card">
+                        <span class="badge">Novità</span>
+
+                        <div class="card-header">
+                            <h3>Pancake Zampetta</h3>
+                            <span class="price">€ 7,00</span>
+                        </div>
+
+                        <p class="card-text">
+                            Tre pancake a forma di zampa con sciroppo d'acero, frutti di bosco e panna montata. Li serviamo fino a mezzogiorno, anche senza lattosio.
+                        </p>
+
+                        <a href="#!" class="btn btn-outline btn-small">Aggiungi all'ordine</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-header">
+                            <h3>Torta di nocciole</h3>
+                            <span class="price">€ 3,50</span>
+                        </div>
+
+                        <p class="card-text">
+                            Ricetta piemontese, con nocciole delle Langhe.
+                        </p>
+
+                        <a href="#!" class="btn btn-outline btn-small">Aggiungi all'ordine</a>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------------------------------ 6. CHI SIAMO ------------------------------ -->
+        <!-- Nell'HTML la foto viene prima del testo: è l'ordine che vogliamo su mobile -->
+        <section class="section about" id="chi-siamo">
+            <div class="container about-inner">
+
+                <div class="about-media">
+                    <img src="img/gattino.jpg" width="736" height="552" alt="Un gattone svaccato su una sedia del caffè">
+                </div>
+
+                <div class="about-text">
+                    <span class="eyebrow">Chi siamo</span>
+                    <h2>Com'è nato Micio Caffè</h2>
+
+                    <p>
+                        Abbiamo aperto nel 2019 insieme ai volontari del gattile, per far conoscere i gatti in un posto più tranquillo di un box.
+                    </p>
+
+                    <p>
+                        I gatti hanno una stanza tutta per loro e vengono in sala quando ne hanno voglia. Ti chiediamo di non usare il flash e di non dargli da mangiare.
+                    </p>
+
+                    <ul class="stats">
+                        <li class="stat">
+                            <strong class="stat-number">6</strong>
+                            <span class="stat-label">gatti ospiti oggi</span>
+                        </li>
+                        <li class="stat">
+                            <strong class="stat-number">142</strong>
+                            <span class="stat-label">adozioni dal 2019</span>
+                        </li>
+                        <li class="stat">
+                            <strong class="stat-number">40</strong>
+                            <span class="stat-label">posti a sedere</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ------------------------------ 7. NEWSLETTER ------------------------------ -->
+        <section class="section newsletter" id="newsletter">
+            <div class="container newsletter-inner">
+
+                <div class="newsletter-text">
+                    <h2>Iscriviti alla newsletter</h2>
+
+                    <p>
+                        Una volta al mese ti scriviamo quali gatti sono arrivati, chi è stato adottato e quali eventi abbiamo in programma.
+                    </p>
+                </div>
+
+                <form class="newsletter-form" action="#!">
+                    <label for="email">La tua email</label>
+
+                    <div class="newsletter-row">
+                        <input type="email" id="email" name="email" placeholder="nome@esempio.it" required>
+                        <button type="submit" class="btn btn-dark">Iscriviti</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ------------------------------ 8. FOOTER ------------------------------ -->
+    <footer class="site-footer" id="contatti">
+        <div class="container">
+
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <a href="#!" class="logo">
+                        <svg class="lucide lucide-paw-print" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg> Micio Caffè
+                    </a>
+
+                    <p class="footer-about">
+                        Cat café e punto adozioni a Torino. Il locale è inventato: è un'esercitazione su Flexbox.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Orari</h3>
+
+                    <ul>
+                        <li>
+                            Lunedì-venerdì: 8:00-19:00
+                        </li>
+                        <li>
+                            Sabato: 9:00-20:00
+                        </li>
+                        <li>
+                            Domenica: 9:00-18:00
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Dove siamo</h3>
+
+                    <p>
+                        Via dei Mici 12, Torino<br>
+                        Vicino alla fermata del tram
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © 2026 Micio Caffè
+                </p>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="#!">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#!">TikTok</a>
+                    </li>
+                    <li>
+                        <a href="#!">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
