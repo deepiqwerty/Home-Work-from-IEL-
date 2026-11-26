@@ -1,0 +1,6 @@
+name;price;amount
+Blue Pen;0.2;500
+Squared Notebook;0.75;500
+HB Pencil;0.1;2000
+Eraser;0.3;250
+Test;0.0;0
